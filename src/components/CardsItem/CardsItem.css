@@ -1,0 +1,21 @@
+.card__wrapper{
+    display: flex;
+    width: 100%;
+     align-items: center;
+     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.wrapper__item {
+    color: white;
+    margin: 35px 0 35px 0;
+    border: 2px white solid;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+.wrapper__setters{
+    display: flex;
+    flex-direction: column;
+}
