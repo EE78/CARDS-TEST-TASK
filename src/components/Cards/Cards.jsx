@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./CardsItem.css";
+import "./Cards.css";
 
 const baseUrl = "http://contest.elecard.ru/frontend_data/";
 const postsUrl = baseUrl + "/catalog.json";
@@ -14,8 +14,6 @@ const sortArr = [
   "business",
 ];
 
-const sortOptions = ["date", "category", "size"];
-
 const CardsItem = () => {
   const [cardInfo, setCardInfo] = useState();
 
@@ -29,7 +27,7 @@ const CardsItem = () => {
   }, []);
 
   const [chooseSort, setChooseSort] = useState("");
-  const handleChooseCategory = (e) => {
+  const handleChooseSort = (e) => {
     const value = e.target.value;
     setChooseSort(value);
   };
@@ -69,27 +67,14 @@ const CardsItem = () => {
   return (
     <div className="card__wrapper">
       <div className="wrapper__setters">
-        <select onChange={handleChooseCategory} value={chooseSort}>
+        <select onChange={handleChooseSort} value={chooseSort}>
           {sortArr.map((i) => (
             <option value={i} key={i}>
               Сортировка по категории {i}
             </option>
           ))}
         </select>
-        <button onClick={returnToDefault}>Обнулить</button>
-
-        <label>
-          Date
-          <input type="radio" name="Sort by date" />
-        </label>
-        <label>
-          Category
-          <input type="radio" name="Sort by category" />
-        </label>
-        <label>
-          Filesize
-          <input type="radio" name="Sort by filesize" />
-        </label>
+        <button onClick={returnToDefault}>To default</button>
       </div>
 
       {cardInfo &&
@@ -99,29 +84,31 @@ const CardsItem = () => {
               <div key={index}>
                 {!imagesToHide.includes(item.image) ? (
                   <div className="wrapper__item">
-                    <img
-                      alt={item.category}
-                      width={"150px"}
-                      height={"150px"}
-                      src={baseUrl + item.image}
-                    />
+                    <div className="item__visual-content">
+                      <img
+                        alt={item.category}
+                        width={"150px"}
+                        height={"150px"}
+                        src={baseUrl + item.image}
+                      />
+                      <button
+                        onClick={() => {
+                          localStorage.setItem(
+                            "closed",
+                            setIsClosed(isClosed + 1)
+                          );
+                          setImagesToHide((prevState) => [
+                            ...prevState,
+                            item.image,
+                          ]);
+                        }}
+                      >
+                        X
+                      </button>
+                    </div>
                     <p>{formatDate(item.timestamp)}</p>
                     <p>SIZE: {(item.filesize / 1024).toFixed(2)} KB</p>
                     <p>CATEGORY: {item.category}</p>
-                    <button
-                      onClick={() => {
-                        localStorage.setItem(
-                          "closed",
-                          setIsClosed(isClosed + 1)
-                        );
-                        setImagesToHide((prevState) => [
-                          ...prevState,
-                          item.image,
-                        ]);
-                      }}
-                    >
-                      X
-                    </button>
                   </div>
                 ) : null}
               </div>

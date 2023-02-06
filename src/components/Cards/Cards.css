@@ -13,9 +13,24 @@
     padding: 15px;
     border-radius: 20px;
     margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrapper__setters{
     display: flex;
     flex-direction: column;
+}
+
+.item__visual-content{
+    position: relative;
+}
+
+.item__visual-content button {
+    position: absolute;
+    right: 0;
+    font-size: 26px;
+    font-weight: bold;
 }
