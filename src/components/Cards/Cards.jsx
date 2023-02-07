@@ -3,6 +3,20 @@ import "./Cards.css";
 
 const baseUrl = "http://contest.elecard.ru/frontend_data/";
 const postsUrl = baseUrl + "/catalog.json";
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
 
 const sortArr = [
   "food",
@@ -41,21 +55,6 @@ const CardsItem = () => {
 
   const formatDate = (timestamp) => {
     const date = new Date(timestamp);
-    const months = [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
-    ];
-
     const year = date.getFullYear();
     const month = months[date.getMonth()];
     const dateDay = date.getDate();
@@ -75,6 +74,8 @@ const CardsItem = () => {
           ))}
         </select>
         <button onClick={returnToDefault}>To default</button>
+
+        
       </div>
 
       {cardInfo &&

@@ -34,3 +34,13 @@
     font-size: 26px;
     font-weight: bold;
 }
+
+.wrapper__setters select {
+        height: 50px;
+        font-size: 18px;
+}
+
+.wrapper__setters button {
+    height: 50px;
+    font-size: 18px;
+}

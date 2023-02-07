@@ -7,3 +7,12 @@
     width: 100%;
     background: linear-gradient(36deg, #040136 0%, #3c7e17 120%);
 }
+.app button {
+    height: 50px;
+    font-size: 24px;
+}
+
+.app__variants{
+    display: flex;
+    justify-content: center;
+}
