@@ -1,7 +1,7 @@
 # Карточки с различными данными
 
 ## Стек
-React, HTML, CSS
+React, HTML, CSS, Styled-Components
 
 
 
