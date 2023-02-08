@@ -13,6 +13,7 @@ function App() {
     <div className="app">
       <Header />
       <div className="app__variants">
+        {!cardsToRender? <h1>Choose how to represent data</h1> : null}
       <button
         onClick={() => {
           setCardsToRender((prevState) => !prevState);
