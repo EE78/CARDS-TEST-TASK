@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Test_Cards_with_React/static/css/main.bb62476e.css",
+    "main.js": "/Test_Cards_with_React/static/js/main.078a0369.js",
+    "index.html": "/Test_Cards_with_React/index.html",
+    "main.bb62476e.css.map": "/Test_Cards_with_React/static/css/main.bb62476e.css.map",
+    "main.078a0369.js.map": "/Test_Cards_with_React/static/js/main.078a0369.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb62476e.css",
+    "static/js/main.078a0369.js"
+  ]
+}
