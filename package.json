@@ -1,7 +1,7 @@
 {
   "name": "test_cards_with_react",
   "version": "0.1.0",
-  "homepage": "https://ee78.github.io/Test_Cards_with_React",
+  "homepage": "https://ee78.github.io/CARDS-TEST-TASK/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
