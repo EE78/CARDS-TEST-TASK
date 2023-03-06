@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Test_Cards_with_React/static/css/main.bb62476e.css",
-    "main.js": "/Test_Cards_with_React/static/js/main.0691ac63.js",
-    "index.html": "/Test_Cards_with_React/index.html",
-    "main.bb62476e.css.map": "/Test_Cards_with_React/static/css/main.bb62476e.css.map",
-    "main.0691ac63.js.map": "/Test_Cards_with_React/static/js/main.0691ac63.js.map"
+    "main.css": "/CARDS-TEST-TASK/static/css/main.bb62476e.css",
+    "main.js": "/CARDS-TEST-TASK/static/js/main.0691ac63.js",
+    "index.html": "/CARDS-TEST-TASK/index.html",
+    "main.bb62476e.css.map": "/CARDS-TEST-TASK/static/css/main.bb62476e.css.map",
+    "main.0691ac63.js.map": "/CARDS-TEST-TASK/static/js/main.0691ac63.js.map"
   },
   "entrypoints": [
     "static/css/main.bb62476e.css",
