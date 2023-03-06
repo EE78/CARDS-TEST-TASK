@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Cards.css";
 
 const baseUrl = "http://contest.elecard.ru/frontend_data/";
-const postsUrl = baseUrl + "/catalog.json";
+const postsUrl = baseUrl + "catalog.json";
 const months = [
   "January",
   "February",
