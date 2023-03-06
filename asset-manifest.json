@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/CARDS-TEST-TASK/static/css/main.bb62476e.css",
-    "main.js": "/CARDS-TEST-TASK/static/js/main.0691ac63.js",
+    "main.js": "/CARDS-TEST-TASK/static/js/main.e95d9b46.js",
     "index.html": "/CARDS-TEST-TASK/index.html",
     "main.bb62476e.css.map": "/CARDS-TEST-TASK/static/css/main.bb62476e.css.map",
-    "main.0691ac63.js.map": "/CARDS-TEST-TASK/static/js/main.0691ac63.js.map"
+    "main.e95d9b46.js.map": "/CARDS-TEST-TASK/static/js/main.e95d9b46.js.map"
   },
   "entrypoints": [
     "static/css/main.bb62476e.css",
-    "static/js/main.0691ac63.js"
+    "static/js/main.e95d9b46.js"
   ]
 }
